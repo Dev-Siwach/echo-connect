@@ -1,0 +1,130 @@
+{
+  "requestId": "11111111-1111-4111-8111-111111111111",
+  "interpretation": {
+    "items": [
+      {
+        "label": "old laptop",
+        "itemType": "computer_display",
+        "condition": "repairable",
+        "quantity": 1
+      },
+      {
+        "label": "three bags of clothes",
+        "itemType": "clothing_textiles",
+        "condition": "unknown",
+        "quantity": 3
+      }
+    ],
+    "unsupportedItems": [
+      {
+        "label": "old fridge",
+        "reason": "large_appliance"
+      }
+    ],
+    "locationHint": "Sector 15",
+    "clarifyingQuestion": null
+  },
+  "results": [
+    {
+      "itemType": "computer_display",
+      "label": "Laptops, computers & displays",
+      "condition": "repairable",
+      "checklist": [
+        "Back up your files to external storage or cloud",
+        "Sign out of all accounts and unlink devices",
+        "Remove any stickers or personal labels"
+      ],
+      "routes": [
+        {
+          "route": "repair",
+          "label": "Repair",
+          "providers": [
+            {
+              "city": "faridabad",
+              "providerId": "fbd-0001",
+              "name": "Example Computer Care",
+              "description": "Fictional laptop and computer repair workshop.",
+              "routes": ["repair"],
+              "acceptedItemTypes": ["computer_display"],
+              "acceptanceNotes": "Assessments done within 24 hours.",
+              "serviceModes": ["drop_off"],
+              "cost": "varies",
+              "address": "SCF 1, Market Area, Sector 15, Faridabad",
+              "localityId": "sector-15",
+              "lat": 28.4089,
+              "lng": 77.3178,
+              "phone": "+910000000000",
+              "whatsapp": "+910000000000",
+              "website": "https://example.com/computer-care",
+              "mapsUrl": "https://maps.google.com/?q=28.4089,77.3178",
+              "hours": "Mon-Sat 10:00-19:00",
+              "verification": {
+                "level": "called",
+                "verifiedAt": "2026-10-09",
+                "verifiedBy": "M1",
+                "method": "Phoned shop; confirmed laptop repair services.",
+                "sourceUrl": "https://example.com/verify"
+              },
+              "isSample": true,
+              "active": true,
+              "updatedAt": "2026-10-09T10:00:00.000Z",
+              "distanceKm": 1.2
+            }
+          ],
+          "unverifiedProviders": []
+        }
+      ]
+    },
+    {
+      "itemType": "clothing_textiles",
+      "label": "Clothes & textiles",
+      "condition": "unknown",
+      "checklist": [
+        "Wash and dry clothes thoroughly before donating",
+        "Pack in sealed bags separated by wearable vs torn"
+      ],
+      "routes": [
+        {
+          "route": "donate",
+          "label": "Donate",
+          "providers": [
+            {
+              "city": "faridabad",
+              "providerId": "fbd-0002",
+              "name": "Example Community Donation Centre",
+              "description": "Fictional community donation center accepting clothes and textiles.",
+              "routes": ["donate"],
+              "acceptedItemTypes": ["clothing_textiles"],
+              "acceptanceNotes": "Clean and wearable items only.",
+              "serviceModes": ["drop_off"],
+              "cost": "free",
+              "address": "Community Hall, Sector 15, Faridabad",
+              "localityId": "sector-15",
+              "lat": 28.4095,
+              "lng": 77.3165,
+              "phone": "+910000000000",
+              "hours": "Wed-Sun 09:00-17:00",
+              "verification": {
+                "level": "official_list",
+                "verifiedAt": "2026-10-09",
+                "verifiedBy": "M1",
+                "method": "Listed on municipal NGO directory."
+              },
+              "isSample": true,
+              "active": true,
+              "updatedAt": "2026-10-09T10:00:00.000Z",
+              "distanceKm": 1.5
+            }
+          ],
+          "unverifiedProviders": []
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "classifier": "bedrock",
+    "city": "faridabad",
+    "latencyMs": 1420,
+    "origin": "locality"
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "checklists": {
+    "phone_tablet": [
+      "TODO: Placeholder prep checklist line 1",
+      "TODO: Placeholder prep checklist line 2"
+    ],
+    "computer_display": [
+      "TODO: Placeholder prep checklist line 1",
+      "TODO: Placeholder prep checklist line 2"
+    ],
+    "charger_cable": [
+      "TODO: Placeholder prep checklist line 1"
+    ],
+    "small_appliance": [
+      "TODO: Placeholder prep checklist line 1"
+    ],
+    "battery_household": [
+      "TODO: Placeholder prep checklist line 1"
+    ],
+    "battery_lithium": [
+      "TODO: Placeholder prep checklist line 1"
+    ],
+    "clothing_textiles": [
+      "TODO: Placeholder prep checklist line 1"
+    ],
+    "books_stationery": [
+      "TODO: Placeholder prep checklist line 1"
+    ],
+    "furniture": [
+      "TODO: Placeholder prep checklist line 1"
+    ],
+    "household_goods": [
+      "TODO: Placeholder prep checklist line 1"
+    ]
+  },
+  "unsupportedMessages": {
+    "large_appliance": "TODO: Placeholder message for large appliances.",
+    "hazardous": "TODO: Placeholder message for hazardous materials.",
+    "out_of_scope": "TODO: Placeholder message for out of scope items.",
+    "unclear": "TODO: Placeholder message for unclear items."
+  },
+  "emptyStateMessage": "TODO: Placeholder empty state message."
+}

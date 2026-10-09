@@ -60,8 +60,8 @@ Engineering workflow and collaboration rules are in [`TEAM_WORKFLOW.md`](TEAM_WO
 ## Phase 1: Shared Contracts & Core Logic Engine
 | Status | Task | Owner |
 |---|---|---|
-| [ ] | Define `shared/taxonomy.ts` & `shared/contracts.ts` (zod schemas) | Member 1 & 2 (Joint) |
-| [ ] | Create `scripts/sync-shared.mjs` code-sync script | Member 1 |
+| [x] | Define `shared/taxonomy.ts` & `shared/contracts.ts` (zod schemas) | Member 1 & 2 (Joint) |
+| [x] | Create `scripts/sync-shared.mjs` code-sync script | Member 1 |
 | [ ] | Implement `rules.ts`, `geo.ts`, `match.ts`, `checklists.ts` + vitest tests | Member 1 |
 | [ ] | Scaffold `web/` mock fixtures using the shared contracts | Member 2 |
 
