@@ -1,43 +1,71 @@
 {
   "checklists": {
     "phone_tablet": [
-      "TODO: Placeholder prep checklist line 1",
-      "TODO: Placeholder prep checklist line 2"
+      "Back up your photos, contacts, and personal data to cloud or external storage.",
+      "Sign out of all personal accounts (Google, Apple ID, WhatsApp, banking apps).",
+      "Perform a full factory reset to securely erase all personal data.",
+      "Remove physical SIM card and microSD memory card.",
+      "Clean off surface dust and pack with original box or accessories if available."
     ],
     "computer_display": [
-      "TODO: Placeholder prep checklist line 1",
-      "TODO: Placeholder prep checklist line 2"
+      "Back up all documents, browser data, and personal files to an external drive or cloud.",
+      "Sign out of accounts and securely wipe or format internal storage drives.",
+      "For desktop setups or monitors, gather matching power cords and video cables.",
+      "Label any known hardware issues (such as faulty keyboard, broken port, or display lines)."
     ],
     "charger_cable": [
-      "TODO: Placeholder prep checklist line 1"
+      "Untangle cables and wind them neatly with twist ties or rubber bands.",
+      "Check for exposed wiring or fraying and separate damaged cords from working ones.",
+      "Bundle matching charging bricks and adapters together with their cables."
     ],
     "small_appliance": [
-      "TODO: Placeholder prep checklist line 1"
+      "Unplug and allow appliances to cool completely before packing.",
+      "Clean out all residual food, water tanks, dust bins, or grease.",
+      "Bundle removable attachments, power cords, and accessories together.",
+      "Note down any known operational defects (such as motor overheating or loose switch)."
     ],
     "battery_household": [
-      "TODO: Placeholder prep checklist line 1"
+      "Separate alkaline, button cell, and rechargeable batteries by chemistry.",
+      "Apply clear tape over terminals (+ and - ends) of loose batteries to prevent short circuits.",
+      "Store loose batteries in a dry, non-conductive container (plastic box or bag).",
+      "Never dispose of household batteries in municipal wet or dry waste bins."
     ],
     "battery_lithium": [
-      "TODO: Placeholder prep checklist line 1"
+      "Tape battery terminals or store in non-conductive individual plastic bags.",
+      "Inspect for any swelling, punctures, overheating, or chemical leakage.",
+      "If a battery is swollen or leaking, place it in sand or a fireproof container and handle with gloves.",
+      "Never puncture, crush, or place lithium batteries into general household trash."
     ],
     "clothing_textiles": [
-      "TODO: Placeholder prep checklist line 1"
+      "Wash and thoroughly dry all clothing and textiles prior to donation or drop-off.",
+      "Check all pockets thoroughly for cash, IDs, keys, or personal belongings.",
+      "Separate gently used wearable clothing from torn, stained, or scrap textiles.",
+      "Fold items and pack them into clean, dry bags or cardboard boxes."
     ],
     "books_stationery": [
-      "TODO: Placeholder prep checklist line 1"
+      "Check between book pages for personal bookmarks, notes, cash, or documents.",
+      "Separate complete book sets and textbooks by grade or subject.",
+      "Test pens and markers; group usable stationery together in pouches or rubber bands.",
+      "Wipe covers clean and pack flat in sturdy, dry boxes to prevent spine damage."
     ],
     "furniture": [
-      "TODO: Placeholder prep checklist line 1"
+      "Wipe down surfaces and clean off dust, stains, or upholstery debris.",
+      "Disassemble bulky pieces if required and bag all screws, bolts, and small hardware securely.",
+      "Check structural stability and note any broken hinges, wobbles, or missing parts.",
+      "Ensure drop-off or pickup vehicle clearances and building stairs/elevator access."
     ],
     "household_goods": [
-      "TODO: Placeholder prep checklist line 1"
+      "Thoroughly clean and dry all kitchenware, utensils, decor, or plastic items.",
+      "Wrap fragile ceramic, glass, or porcelain items securely in newspaper or padding.",
+      "Group complete sets together (such as bowls, cutlery, matching toy sets) in boxes.",
+      "Ensure no food residue or moisture remains inside containers."
     ]
   },
   "unsupportedMessages": {
-    "large_appliance": "TODO: Placeholder message for large appliances.",
-    "hazardous": "TODO: Placeholder message for hazardous materials.",
-    "out_of_scope": "TODO: Placeholder message for out of scope items.",
-    "unclear": "TODO: Placeholder message for unclear items."
+    "large_appliance": "EcoConnect v1 does not cover large appliances (refrigerators, air conditioners, washing machines). Please contact authorized brand service centers or municipal bulk e-waste pickup.",
+    "hazardous": "Hazardous materials (chemicals, paints, medicines, lead-acid car batteries) cannot be accepted through regular drop points. Please contact authorized hazardous waste handlers or local civic facilities.",
+    "out_of_scope": "This item is outside EcoConnect's scope (food waste, construction debris, general garbage, or motor vehicles). Please use your standard municipal waste collection or specialized automotive scrap handlers.",
+    "unclear": "We couldn't clearly identify this item from your description. Try specifying the item name and whether it is working, repairable, or broken."
   },
-  "emptyStateMessage": "TODO: Placeholder empty state message."
+  "emptyStateMessage": "We haven't verified a service for this in Faridabad yet."
 }

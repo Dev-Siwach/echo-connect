@@ -1,8 +1,22 @@
 [
-  {
-    "id": "sector-15",
-    "name": "TODO: Sector 15 (Placeholder)",
-    "lat": null,
-    "lng": null
-  }
+  { "id": "sector-15", "name": "Sector 15", "lat": 28.3953, "lng": 77.3238 },
+  { "id": "sector-16", "name": "Sector 16", "lat": 28.4138, "lng": 77.3224 },
+  { "id": "sector-14", "name": "Sector 14", "lat": 28.3959, "lng": 77.3327 },
+  { "id": "sector-21a", "name": "Sector 21A", "lat": 28.4233, "lng": 77.3000 },
+  { "id": "sector-28", "name": "Sector 28", "lat": 28.4383, "lng": 77.3091 },
+  { "id": "sector-31", "name": "Sector 31", "lat": 28.4460, "lng": 77.3128 },
+  { "id": "sector-37", "name": "Sector 37", "lat": 28.4798, "lng": 77.3127 },
+  { "id": "sector-81", "name": "Sector 81 (Greater Faridabad)", "lat": 28.3921, "lng": 77.3447 },
+  { "id": "old-faridabad", "name": "Old Faridabad", "lat": 28.4125, "lng": 77.3198 },
+  { "id": "ballabgarh", "name": "Ballabgarh", "lat": 28.3422, "lng": 77.3256 },
+  { "id": "nit-faridabad", "name": "NIT Faridabad", "lat": 28.3817, "lng": 77.2961 },
+  { "id": "sector-9", "name": "Sector 9", "lat": 28.3761, "lng": 77.3347 },
+  { "id": "sector-10", "name": "Sector 10", "lat": 28.3755, "lng": 77.3262 },
+  { "id": "sector-11", "name": "Sector 11", "lat": 28.3751, "lng": 77.3185 },
+  { "id": "sector-19", "name": "Sector 19", "lat": 28.4224, "lng": 77.3143 },
+  { "id": "sector-29", "name": "Sector 29", "lat": 28.4334, "lng": 77.3224 },
+  { "id": "sector-6", "name": "Sector 6", "lat": 28.3613, "lng": 77.3188 },
+  { "id": "sector-24", "name": "Sector 24", "lat": 28.3582, "lng": 77.3055 },
+  { "id": "sector-59", "name": "Sector 59", "lat": 28.3090, "lng": 77.3080 },
+  { "id": "sector-68", "name": "Sector 68 (IMT)", "lat": 28.3272, "lng": 77.3622 }
 ]

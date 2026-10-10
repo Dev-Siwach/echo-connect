@@ -53,9 +53,19 @@ flowchart LR
 | [docs/TASKS.md](docs/TASKS.md) | Build progress tracker |
 | [docs/DEMO_AND_SUBMISSION.md](docs/DEMO_AND_SUBMISSION.md) | Demo script, QA checklist, submission |
 
+## Verified Data & Authenticity
+EcoConnect uses authentic, verified local services in Faridabad.
+
+- **Total Verified Facilities in MVP:** 10 authorized e-waste dismantling and recycling facilities in Faridabad.
+- **Source of Truth:** State Pollution Control Board (HSPCB) & Central Pollution Control Board (CPCB) official regulatory registers.
+- **Verification Level:** `official_list` (government registered facilities).
+- **Localities Covered:** 20 sectors across Old Faridabad, NIT, Ballabgarh, and Greater Faridabad with real GPS coordinates.
+- **Coverage Categories:** Phones & tablets, computers & monitors, chargers & cables, small household appliances, lithium batteries.
+- **Zero Hallucinated Facts:** Missing fields stay `null`. No invented phone numbers or artificial ratings.
+
 ## Getting started
 
-> Filled in during Phase 2 and Phase 5. Planned commands:
+Planned commands:
 
 ```bash
 # shared code
@@ -74,4 +84,6 @@ npm run dev
 
 ## Team
 
-_TBD_
+- **Member 1:** Cloud & Backend Lead (`backend/`, SAM, Bedrock Converse, DynamoDB)
+- **Member 2:** Frontend & UX Lead (`web/`, Next.js, Tailwind, Mobile UX)
+- **Member 3:** Data, QA & Submission Lead (`data/`, schemas, AI evaluation, docs, video)
