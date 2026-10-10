@@ -1,0 +1,391 @@
+[
+  {
+    "city": "faridabad",
+    "providerId": "fbd-0001",
+    "name": "Endeavor Re-processor and Recyclers India",
+    "description": "Authorized e-waste dismantler handling electronic items and components.",
+    "routes": [
+      "ewaste_collection"
+    ],
+    "acceptedItemTypes": [
+      "phone_tablet",
+      "computer_display",
+      "charger_cable",
+      "small_appliance"
+    ],
+    "acceptanceNotes": "Registration listed under state e-waste recyclers/dismantlers schedule. Commercial and electronic processing intake.",
+    "serviceModes": [
+      "drop_off"
+    ],
+    "cost": "free",
+    "address": "Plot no. 323, Sec-24, Industrial Area, Faridabad",
+    "localityId": "sector-24",
+    "lat": 28.3582,
+    "lng": 77.3055,
+    "phone": null,
+    "whatsapp": null,
+    "website": null,
+    "mapsUrl": null,
+    "hours": null,
+    "verification": {
+      "level": "official_list",
+      "verifiedAt": "2026-10-10",
+      "verifiedBy": "M3",
+      "method": "Listed in official State Pollution Control Board e-waste recyclers/dismantlers directory (row 16) and CPCB approved registry (serial 12). Official government email confirmation requested.",
+      "sourceUrl": "https://hspcb.gov.in/uploads/pages/ewaster_66ac829eb3965.pdf"
+    },
+    "isSample": false,
+    "active": true,
+    "updatedAt": "2026-10-10T16:00:00Z"
+  },
+  {
+    "city": "faridabad",
+    "providerId": "fbd-0002",
+    "name": "A to Z E-waste Solutions",
+    "description": "Authorized e-waste dismantler for decommissioned electronics and appliances.",
+    "routes": [
+      "ewaste_collection"
+    ],
+    "acceptedItemTypes": [
+      "phone_tablet",
+      "computer_display",
+      "charger_cable",
+      "small_appliance"
+    ],
+    "acceptanceNotes": "Official directory listing in Sector 59 industrial area. Official government email confirmation requested.",
+    "serviceModes": [
+      "drop_off"
+    ],
+    "cost": "free",
+    "address": "Plot no. 66, Pragati Vihar, Industrial Area, Sector-59, Ballabgarh, Faridabad",
+    "localityId": "sector-59",
+    "lat": 28.309,
+    "lng": 77.308,
+    "phone": null,
+    "whatsapp": null,
+    "website": null,
+    "mapsUrl": null,
+    "hours": null,
+    "verification": {
+      "level": "official_list",
+      "verifiedAt": "2026-10-10",
+      "verifiedBy": "M3",
+      "method": "Listed in official HSPCB authorized e-waste dismantlers registry (row 17). Official government email confirmation requested.",
+      "sourceUrl": "https://hspcb.gov.in/uploads/pages/ewaster_66ac829eb3965.pdf"
+    },
+    "isSample": false,
+    "active": true,
+    "updatedAt": "2026-10-10T16:00:00Z"
+  },
+  {
+    "city": "faridabad",
+    "providerId": "fbd-0003",
+    "name": "E-waste Solutions",
+    "description": "Authorized e-waste management and dismantling facility handling consumer electronics, IT equipment, and small appliances.",
+    "routes": [
+      "ewaste_collection"
+    ],
+    "acceptedItemTypes": [
+      "phone_tablet",
+      "computer_display",
+      "charger_cable",
+      "small_appliance"
+    ],
+    "acceptanceNotes": "Authorized partner handling channelized electronic waste and collection. Official government email confirmation requested.",
+    "serviceModes": [
+      "drop_off"
+    ],
+    "cost": "free",
+    "address": "Industrial Shed, 1A, Industrial Estate, Sector-6, Faridabad",
+    "localityId": "sector-6",
+    "lat": 28.3613,
+    "lng": 77.3188,
+    "phone": null,
+    "whatsapp": null,
+    "website": null,
+    "mapsUrl": null,
+    "hours": null,
+    "verification": {
+      "level": "official_list",
+      "verifiedAt": "2026-10-10",
+      "verifiedBy": "M3",
+      "method": "Listed in official HSPCB authorized dismantlers directory (row 18) and CPCB approved registry (serial 11). Official government email confirmation requested.",
+      "sourceUrl": "https://hspcb.gov.in/uploads/pages/ewaster_66ac829eb3965.pdf"
+    },
+    "isSample": false,
+    "active": true,
+    "updatedAt": "2026-10-10T16:00:00Z"
+  },
+  {
+    "city": "faridabad",
+    "providerId": "fbd-0004",
+    "name": "V S Enterprises",
+    "description": "Authorized e-waste dismantler accepting consumer electronics, cables, and scrap components.",
+    "routes": [
+      "ewaste_collection"
+    ],
+    "acceptedItemTypes": [
+      "phone_tablet",
+      "computer_display",
+      "charger_cable"
+    ],
+    "acceptanceNotes": "Registered e-waste facility. Official government email confirmation requested.",
+    "serviceModes": [
+      "drop_off"
+    ],
+    "cost": "free",
+    "address": "Plot no. 9, Pragati Vihar, Sector-59, Faridabad",
+    "localityId": "sector-59",
+    "lat": 28.309,
+    "lng": 77.308,
+    "phone": null,
+    "whatsapp": null,
+    "website": null,
+    "mapsUrl": null,
+    "hours": null,
+    "verification": {
+      "level": "official_list",
+      "verifiedAt": "2026-10-10",
+      "verifiedBy": "M3",
+      "method": "Listed in official HSPCB e-waste directory (row 19) and CPCB register (serial 13). Official government email confirmation requested.",
+      "sourceUrl": "https://hspcb.gov.in/uploads/pages/ewaster_66ac829eb3965.pdf"
+    },
+    "isSample": false,
+    "active": true,
+    "updatedAt": "2026-10-10T16:00:00Z"
+  },
+  {
+    "city": "faridabad",
+    "providerId": "fbd-0005",
+    "name": "AMN E-Waste Management Pvt Ltd",
+    "description": "Authorized e-waste management and recycling enterprise.",
+    "routes": [
+      "ewaste_collection"
+    ],
+    "acceptedItemTypes": [
+      "phone_tablet",
+      "computer_display",
+      "charger_cable",
+      "small_appliance"
+    ],
+    "acceptanceNotes": "Industrial area dismantling and recycling setup. Official government email confirmation requested.",
+    "serviceModes": [
+      "drop_off"
+    ],
+    "cost": "free",
+    "address": "Plot No. 171, Sector-59, Industrial Area, Faridabad",
+    "localityId": "sector-59",
+    "lat": 28.309,
+    "lng": 77.308,
+    "phone": null,
+    "whatsapp": null,
+    "website": null,
+    "mapsUrl": null,
+    "hours": null,
+    "verification": {
+      "level": "official_list",
+      "verifiedAt": "2026-10-10",
+      "verifiedBy": "M3",
+      "method": "Listed in official HSPCB authorized e-waste registry (row 20) and CPCB register (serial 14). Official government email confirmation requested.",
+      "sourceUrl": "https://hspcb.gov.in/uploads/pages/ewaster_66ac829eb3965.pdf"
+    },
+    "isSample": false,
+    "active": true,
+    "updatedAt": "2026-10-10T16:00:00Z"
+  },
+  {
+    "city": "faridabad",
+    "providerId": "fbd-0006",
+    "name": "Naturevolt Recyclers India Pvt Ltd",
+    "description": "Authorized e-waste recycler processing electronics, computers, power banks, and small appliances.",
+    "routes": [
+      "ewaste_collection"
+    ],
+    "acceptedItemTypes": [
+      "phone_tablet",
+      "computer_display",
+      "charger_cable",
+      "small_appliance",
+      "battery_lithium"
+    ],
+    "acceptanceNotes": "Brand EPR collection partner with structured collection processes. Official government email confirmation requested.",
+    "serviceModes": [
+      "drop_off"
+    ],
+    "cost": "free",
+    "address": "Plot No. 323, Part-IV, Sector-24, Faridabad",
+    "localityId": "sector-24",
+    "lat": 28.3582,
+    "lng": 77.3055,
+    "phone": null,
+    "whatsapp": null,
+    "website": "https://www.naturevoltrecyclers.com",
+    "mapsUrl": null,
+    "hours": null,
+    "verification": {
+      "level": "official_list",
+      "verifiedAt": "2026-10-10",
+      "verifiedBy": "M3",
+      "method": "Listed in HSPCB official registry (row 21), CPCB approved recycler list (serial 38), and cited in state NGT environmental filings. Official government email confirmation requested.",
+      "sourceUrl": "https://www.naturevoltrecyclers.com"
+    },
+    "isSample": false,
+    "active": true,
+    "updatedAt": "2026-10-10T16:00:00Z"
+  },
+  {
+    "city": "faridabad",
+    "providerId": "fbd-0007",
+    "name": "AV Green Solutions Pvt Ltd",
+    "description": "Authorized e-waste dismantler accepting consumer electronics and accessories.",
+    "routes": [
+      "ewaste_collection"
+    ],
+    "acceptedItemTypes": [
+      "phone_tablet",
+      "computer_display",
+      "charger_cable"
+    ],
+    "acceptanceNotes": "Authorized Sector-24 industrial facility. Official government email confirmation requested.",
+    "serviceModes": [
+      "drop_off"
+    ],
+    "cost": "free",
+    "address": "Plot No. 274, Sector-24, Industrial Area, Faridabad",
+    "localityId": "sector-24",
+    "lat": 28.3582,
+    "lng": 77.3055,
+    "phone": null,
+    "whatsapp": null,
+    "website": null,
+    "mapsUrl": null,
+    "hours": null,
+    "verification": {
+      "level": "official_list",
+      "verifiedAt": "2026-10-10",
+      "verifiedBy": "M3",
+      "method": "Listed in official HSPCB authorized e-waste registry (row 22) and CPCB register (serial 36). Official government email confirmation requested.",
+      "sourceUrl": "https://hspcb.gov.in/uploads/pages/ewaster_66ac829eb3965.pdf"
+    },
+    "isSample": false,
+    "active": true,
+    "updatedAt": "2026-10-10T16:00:00Z"
+  },
+  {
+    "city": "faridabad",
+    "providerId": "fbd-0008",
+    "name": "Re Chakra Waste Management LLP",
+    "description": "Authorized e-waste recycler partner processing end-of-life electronics and appliances.",
+    "routes": [
+      "ewaste_collection"
+    ],
+    "acceptedItemTypes": [
+      "phone_tablet",
+      "computer_display",
+      "charger_cable",
+      "small_appliance"
+    ],
+    "acceptanceNotes": "E-waste recycler cited by brand partners. Official government email confirmation requested.",
+    "serviceModes": [
+      "drop_off"
+    ],
+    "cost": "free",
+    "address": "Plot No. 18, Sector-6, Faridabad",
+    "localityId": "sector-6",
+    "lat": 28.3613,
+    "lng": 77.3188,
+    "phone": null,
+    "whatsapp": null,
+    "website": "https://www.re-chakra.com",
+    "mapsUrl": null,
+    "hours": null,
+    "verification": {
+      "level": "official_list",
+      "verifiedAt": "2026-10-10",
+      "verifiedBy": "M3",
+      "method": "Listed in HSPCB official directory (row 23), CPCB approved recycler registry (serial 37), and cited in NGT filings. Official government email confirmation requested.",
+      "sourceUrl": "https://hspcb.gov.in/uploads/pages/ewaster_66ac829eb3965.pdf"
+    },
+    "isSample": false,
+    "active": true,
+    "updatedAt": "2026-10-10T16:00:00Z"
+  },
+  {
+    "city": "faridabad",
+    "providerId": "fbd-0009",
+    "name": "CLG Projects LLP",
+    "description": "Authorized e-waste dismantling facility for electronics and electrical equipment.",
+    "routes": [
+      "ewaste_collection"
+    ],
+    "acceptedItemTypes": [
+      "phone_tablet",
+      "computer_display",
+      "charger_cable",
+      "small_appliance"
+    ],
+    "acceptanceNotes": "Authorized Ballabgarh industrial cluster dismantler. Official government email confirmation requested.",
+    "serviceModes": [
+      "drop_off"
+    ],
+    "cost": "free",
+    "address": "Plot No. 75-76, Sector-59, Pragati Vihar, Ballabgarh, Faridabad",
+    "localityId": "sector-59",
+    "lat": 28.309,
+    "lng": 77.308,
+    "phone": null,
+    "whatsapp": null,
+    "website": null,
+    "mapsUrl": null,
+    "hours": null,
+    "verification": {
+      "level": "official_list",
+      "verifiedAt": "2026-10-10",
+      "verifiedBy": "M3",
+      "method": "Listed in HSPCB authorized directory (row 24) and CPCB register (serial 39). Official government email confirmation requested.",
+      "sourceUrl": "https://hspcb.gov.in/uploads/pages/ewaster_66ac829eb3965.pdf"
+    },
+    "isSample": false,
+    "active": true,
+    "updatedAt": "2026-10-10T16:00:00Z"
+  },
+  {
+    "city": "faridabad",
+    "providerId": "fbd-0010",
+    "name": "SSL E Waste Management LLP",
+    "description": "Authorized e-waste dismantler and processing center located in IMT Sector 68.",
+    "routes": [
+      "ewaste_collection"
+    ],
+    "acceptedItemTypes": [
+      "phone_tablet",
+      "computer_display",
+      "charger_cable",
+      "small_appliance"
+    ],
+    "acceptanceNotes": "IMT Faridabad industrial processing unit. Official government email confirmation requested.",
+    "serviceModes": [
+      "drop_off"
+    ],
+    "cost": "free",
+    "address": "Plot No. 410, Sector-68, IMT, Faridabad",
+    "localityId": "sector-68",
+    "lat": 28.3272,
+    "lng": 77.3622,
+    "phone": null,
+    "whatsapp": null,
+    "website": null,
+    "mapsUrl": null,
+    "hours": null,
+    "verification": {
+      "level": "official_list",
+      "verifiedAt": "2026-10-10",
+      "verifiedBy": "M3",
+      "method": "Listed in HSPCB authorized e-waste registry (row 25) and CPCB register (serial 40). Official government email confirmation requested.",
+      "sourceUrl": "https://hspcb.gov.in/uploads/pages/ewaster_66ac829eb3965.pdf"
+    },
+    "isSample": false,
+    "active": true,
+    "updatedAt": "2026-10-10T16:00:00Z"
+  }
+]

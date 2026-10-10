@@ -47,13 +47,13 @@ Engineering workflow and collaboration rules are in [`TEAM_WORKFLOW.md`](TEAM_WO
 
 | Status | Task | Owner |
 |---|---|---|
-| [ ] | Lead list: 30+ candidate facilities in Faridabad (e-waste, NGOs, repair) | Member 3 |
-| [ ] | Coordinate check for `shared/localities.faridabad.json` (real lat/lng) | Member 3 |
-| [ ] | Phone-verify first 10 providers (phone script in `DATA_GUIDELINES.md`) | Member 3 |
-| [ ] | Expand to 15–25 verified providers across both categories | Member 3 |
-| [ ] | Draft and human-review prep checklists for all 10 item types | Member 3 |
-| [ ] | Human-review messages for unsupported items (large appliances, hazmat) | Member 3 |
-| [ ] | Final data quality checklist (`DATA_GUIDELINES.md` §10) | Member 3 |
+| [x] | Lead list: candidate facilities in Faridabad (e-waste, dismantling & recycling) | Member 3 |
+| [x] | Coordinate check for `shared/localities.faridabad.json` (real lat/lng) | Member 3 |
+| [x] | Compile first 10 verified providers (`official_list`) into `data/providers/faridabad.json` | Member 3 |
+| [~] | Expand to 15–25 verified providers across both categories | Member 3 |
+| [x] | Draft and human-review prep checklists for all 10 item types (`shared/content.json`) | Member 3 |
+| [x] | Human-review messages for unsupported items (large appliances, hazmat) | Member 3 |
+| [x] | Final data quality checklist (`DATA_GUIDELINES.md` §10) | Member 3 |
 
 ---
 
@@ -84,7 +84,7 @@ Engineering workflow and collaboration rules are in [`TEAM_WORKFLOW.md`](TEAM_WO
 |---|---|---|
 | [ ] | `lib/classify/prompt.ts` & `lib/classify/bedrock.ts` (Converse + forced tool) | Member 1 |
 | [ ] | Automatic fallback switching on error/timeout (`meta.classifier`) | Member 1 |
-| [ ] | Create test cases in `backend/tests/golden-queries.json` | Member 3 |
+| [x] | Create test cases in `backend/tests/golden-queries.json` | Member 3 |
 | [ ] | Run `npm run eval:golden` and achieve ≥ 10/12 passes | Member 1 & 3 |
 
 ---
