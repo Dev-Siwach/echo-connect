@@ -5,8 +5,7 @@
  */
 
 import fs from 'node:fs';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import defaultContentJson from '../shared/content.json' with { type: 'json' };
 import { ContentSchema, type Content } from '../shared/contracts.js';
 import {
   ITEM_TYPES,
@@ -15,27 +14,25 @@ import {
   type UnsupportedReason,
 } from '../shared/taxonomy.js';
 
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const DEFAULT_CONTENT_PATH = path.resolve(__dirname, '../shared/content.json');
-
 let cachedContent: Content | null = null;
 
 /**
  * Loads, validates and asserts completeness of content.json
  */
 export function loadContent(customPath?: string): Content {
-  const filePath = customPath || DEFAULT_CONTENT_PATH;
-  if (!fs.existsSync(filePath)) {
-    throw new Error(`Content file not found at: ${filePath}`);
-  }
-
-  const raw = fs.readFileSync(filePath, 'utf8');
   let json: unknown;
-  try {
-    json = JSON.parse(raw);
-  } catch (err) {
-    throw new Error(`Invalid JSON in content file at ${filePath}: ${err}`);
+  if (customPath) {
+    if (!fs.existsSync(customPath)) {
+      throw new Error(`Content file not found at: ${customPath}`);
+    }
+    const raw = fs.readFileSync(customPath, 'utf8');
+    try {
+      json = JSON.parse(raw);
+    } catch (err) {
+      throw new Error(`Invalid JSON in content file at ${customPath}: ${err}`);
+    }
+  } else {
+    json = defaultContentJson;
   }
 
   const content = ContentSchema.parse(json);
@@ -43,7 +40,7 @@ export function loadContent(customPath?: string): Content {
   // Assert every single item type has a checklist entry
   for (const itemType of ITEM_TYPES) {
     if (!content.checklists[itemType]) {
-      throw new Error(`Missing prep checklist for item type: "${itemType}" in ${filePath}`);
+      throw new Error(`Missing prep checklist for item type: "${itemType}" in content`);
     }
   }
 
@@ -51,7 +48,7 @@ export function loadContent(customPath?: string): Content {
   for (const reason of UNSUPPORTED_REASONS) {
     if (!content.unsupportedMessages[reason]) {
       throw new Error(
-        `Missing unsupported message for reason: "${reason}" in ${filePath}`
+        `Missing unsupported message for reason: "${reason}" in content`
       );
     }
   }

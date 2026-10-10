@@ -4,24 +4,23 @@
  */
 
 import fs from 'node:fs';
-import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import defaultLocalitiesJson from '../shared/localities.faridabad.json' with { type: 'json' };
 import { z } from 'zod';
 import { LocalitySchema, type Locality } from '../shared/contracts.js';
-
-const __filename = fileURLToPath(import.meta.url);
-const __dirname = path.dirname(__filename);
-const DEFAULT_LOCALITIES_PATH = path.resolve(__dirname, '../shared/localities.faridabad.json');
 
 let cachedLocalities: Locality[] | null = null;
 
 export function loadLocalities(customPath?: string): Locality[] {
-  const filePath = customPath || DEFAULT_LOCALITIES_PATH;
-  if (!fs.existsSync(filePath)) {
-    return [];
+  let parsed: unknown;
+  if (customPath) {
+    if (!fs.existsSync(customPath)) {
+      return [];
+    }
+    const raw = fs.readFileSync(customPath, 'utf8');
+    parsed = JSON.parse(raw);
+  } else {
+    parsed = defaultLocalitiesJson;
   }
-  const raw = fs.readFileSync(filePath, 'utf8');
-  const parsed = JSON.parse(raw);
   return z.array(LocalitySchema).parse(parsed);
 }
 

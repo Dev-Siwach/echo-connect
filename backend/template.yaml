@@ -117,6 +117,7 @@ Resources:
       BuildProperties:
         Minify: true
         Target: es2022
+        Format: esm
         Sourcemap: true
         EntryPoints:
           - src/handlers/search.ts
@@ -153,6 +154,7 @@ Resources:
       BuildProperties:
         Minify: true
         Target: es2022
+        Format: esm
         Sourcemap: true
         EntryPoints:
           - src/handlers/providers.ts
@@ -186,6 +188,7 @@ Resources:
       BuildProperties:
         Minify: true
         Target: es2022
+        Format: esm
         Sourcemap: true
         EntryPoints:
           - src/handlers/health.ts
