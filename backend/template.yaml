@@ -1,0 +1,218 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: >
+  EcoConnect Backend API Stack
+  SAM template with HTTP API, DynamoDB, Lambdas, and CloudWatch log groups.
+
+Parameters:
+  AmplifyDomain:
+    Type: String
+    Default: 'http://localhost:3000'
+    Description: Allowed CORS domain for Amplify frontend
+  DefaultCity:
+    Type: String
+    Default: 'faridabad'
+    Description: Default partition city
+  ShowSampleData:
+    Type: String
+    Default: 'true'
+    AllowedValues: ['true', 'false']
+    Description: Whether to include sample placeholder providers
+  BedrockModelId:
+    Type: String
+    Default: 'amazon.nova-micro-v1:0'
+    Description: Bedrock Model or Inference Profile ID
+  ClassifierMode:
+    Type: String
+    Default: 'fallback'
+    AllowedValues: ['bedrock', 'fallback']
+    Description: Classification engine mode
+
+Globals:
+  Function:
+    Runtime: nodejs20.x
+    Architectures:
+      - x86_64
+    Timeout: 10
+    MemorySize: 256
+    Environment:
+      Variables:
+        TABLE_NAME: !Ref ProvidersTable
+        DEFAULT_CITY: !Ref DefaultCity
+        SHOW_SAMPLE_DATA: !Ref ShowSampleData
+        LOG_LEVEL: 'info'
+
+Resources:
+  # ============================================================================
+  # DynamoDB Providers Table
+  # ============================================================================
+  ProvidersTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: !Sub '${AWS::StackName}-Providers'
+      BillingMode: PAY_PER_REQUEST
+      AttributeDefinitions:
+        - AttributeName: city
+          AttributeType: S
+        - AttributeName: providerId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: city
+          KeyType: HASH
+        - AttributeName: providerId
+          KeyType: RANGE
+
+  # ============================================================================
+  # API Gateway HTTP API
+  # ============================================================================
+  HttpApi:
+    Type: AWS::Serverless::HttpApi
+    Properties:
+      CorsConfiguration:
+        AllowOrigins:
+          - 'http://localhost:3000'
+          - !Ref AmplifyDomain
+        AllowMethods:
+          - GET
+          - POST
+          - OPTIONS
+        AllowHeaders:
+          - Content-Type
+          - Authorization
+        MaxAge: 600
+      DefaultRouteSettings:
+        ThrottlingBurstLimit: 20
+        ThrottlingRateLimit: 10
+
+  # ============================================================================
+  # Search Function (POST /search)
+  # ============================================================================
+  SearchFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src/handlers/search.handler
+      MemorySize: 512
+      Timeout: 15
+      Environment:
+        Variables:
+          BEDROCK_MODEL_ID: !Ref BedrockModelId
+          CLASSIFIER_MODE: !Ref ClassifierMode
+      Policies:
+        - DynamoDBReadPolicy:
+            TableName: !Ref ProvidersTable
+        - Statement:
+            - Effect: Allow
+              Action:
+                - bedrock:InvokeModel
+              Resource: '*'
+      Events:
+        SearchApi:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /search
+            Method: POST
+    Metadata:
+      BuildMethod: esbuild
+      BuildProperties:
+        Minify: true
+        Target: es2022
+        Format: esm
+        Sourcemap: true
+        EntryPoints:
+          - src/handlers/search.ts
+        External:
+          - '@aws-sdk/*'
+
+  SearchFunctionLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/aws/lambda/${SearchFunction}'
+      RetentionInDays: 14
+
+  # ============================================================================
+  # Providers Browse Function (GET /providers)
+  # ============================================================================
+  ProvidersFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src/handlers/providers.handler
+      MemorySize: 256
+      Timeout: 10
+      Policies:
+        - DynamoDBReadPolicy:
+            TableName: !Ref ProvidersTable
+      Events:
+        ProvidersApi:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /providers
+            Method: GET
+    Metadata:
+      BuildMethod: esbuild
+      BuildProperties:
+        Minify: true
+        Target: es2022
+        Format: esm
+        Sourcemap: true
+        EntryPoints:
+          - src/handlers/providers.ts
+        External:
+          - '@aws-sdk/*'
+
+  ProvidersFunctionLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/aws/lambda/${ProvidersFunction}'
+      RetentionInDays: 14
+
+  # ============================================================================
+  # Health Function (GET /health)
+  # ============================================================================
+  HealthFunction:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: src/handlers/health.handler
+      MemorySize: 128
+      Timeout: 5
+      Events:
+        HealthApi:
+          Type: HttpApi
+          Properties:
+            ApiId: !Ref HttpApi
+            Path: /health
+            Method: GET
+    Metadata:
+      BuildMethod: esbuild
+      BuildProperties:
+        Minify: true
+        Target: es2022
+        Format: esm
+        Sourcemap: true
+        EntryPoints:
+          - src/handlers/health.ts
+        External:
+          - '@aws-sdk/*'
+
+  HealthFunctionLogGroup:
+    Type: AWS::Logs::LogGroup
+    Properties:
+      LogGroupName: !Sub '/aws/lambda/${HealthFunction}'
+      RetentionInDays: 14
+
+# ==============================================================================
+# Outputs
+# ==============================================================================
+Outputs:
+  ApiUrl:
+    Description: HTTP API Gateway endpoint URL
+    Value: !Sub 'https://${HttpApi}.execute-api.${AWS::Region}.amazonaws.com'
+    Export:
+      Name: !Sub '${AWS::StackName}-ApiUrl'
+
+  TableName:
+    Description: DynamoDB Providers table name
+    Value: !Ref ProvidersTable
+    Export:
+      Name: !Sub '${AWS::StackName}-TableName'

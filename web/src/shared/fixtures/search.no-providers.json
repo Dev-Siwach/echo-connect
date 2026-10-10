@@ -1,0 +1,47 @@
+{
+  "requestId": "55555555-5555-4555-8555-555555555555",
+  "interpretation": {
+    "items": [
+      {
+        "label": "old toaster",
+        "itemType": "small_appliance",
+        "condition": "broken",
+        "quantity": 1
+      }
+    ],
+    "unsupportedItems": [],
+    "locationHint": null,
+    "clarifyingQuestion": null
+  },
+  "results": [
+    {
+      "itemType": "small_appliance",
+      "label": "Small appliances",
+      "condition": "broken",
+      "checklist": [
+        "Unplug and ensure device is cool",
+        "Empty any food crumbs or residual liquid"
+      ],
+      "routes": [
+        {
+          "route": "repair",
+          "label": "Repair",
+          "providers": [],
+          "unverifiedProviders": []
+        },
+        {
+          "route": "ewaste_collection",
+          "label": "E-waste collection",
+          "providers": [],
+          "unverifiedProviders": []
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "classifier": "bedrock",
+    "city": "faridabad",
+    "latencyMs": 1310,
+    "origin": "default"
+  }
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "city": "faridabad",
+    "providerId": "fbd-0001",
+    "name": "Example Electronics Repair",
+    "description": "Fictional repair center for phones, laptops, and tablets.",
+    "routes": ["repair", "resell_reuse"],
+    "acceptedItemTypes": ["phone_tablet", "computer_display"],
+    "acceptanceNotes": "Assessments done within 24 hours.",
+    "serviceModes": ["drop_off"],
+    "cost": "varies",
+    "address": "SCO 10, Sector 15 Market, Faridabad",
+    "localityId": "sector-15",
+    "lat": 28.4089,
+    "lng": 77.3178,
+    "phone": "+910000000000",
+    "whatsapp": "+910000000000",
+    "website": "https://example.com/repair",
+    "mapsUrl": "https://maps.google.com/?q=28.4089,77.3178",
+    "hours": "Mon-Sat 10:00-19:00",
+    "verification": {
+      "level": "called",
+      "verifiedAt": "2026-10-09",
+      "verifiedBy": "M1",
+      "method": "Phoned shop; confirmed repair operations."
+    },
+    "isSample": true,
+    "active": true,
+    "updatedAt": "2026-10-09T10:00:00.000Z"
+  },
+  {
+    "city": "faridabad",
+    "providerId": "fbd-0002",
+    "name": "Example Battery & E-Waste Kiosk",
+    "description": "Fictional drop-off kiosk for dry cell batteries and small accessories.",
+    "routes": ["ewaste_collection"],
+    "acceptedItemTypes": ["battery_household", "battery_lithium", "charger_cable"],
+    "acceptanceNotes": "Tape terminals before dropping.",
+    "serviceModes": ["drop_off"],
+    "cost": "free",
+    "address": "Eco Bin #4, Sector 15 Community Centre, Faridabad",
+    "localityId": "sector-15",
+    "lat": 28.4095,
+    "lng": 77.3165,
+    "phone": "+910000000000",
+    "verification": {
+      "level": "official_list",
+      "verifiedAt": "2026-10-09",
+      "verifiedBy": "M1",
+      "method": "Listed in municipal e-waste drop program."
+    },
+    "isSample": true,
+    "active": true,
+    "updatedAt": "2026-10-09T10:00:00.000Z"
+  }
+]

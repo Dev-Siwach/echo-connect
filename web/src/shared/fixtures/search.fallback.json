@@ -1,0 +1,68 @@
+{
+  "requestId": "44444444-4444-4444-8444-444444444444",
+  "interpretation": {
+    "items": [
+      {
+        "label": "purana mobile phone",
+        "itemType": "phone_tablet",
+        "condition": "broken",
+        "quantity": 1
+      }
+    ],
+    "unsupportedItems": [],
+    "locationHint": "Sector 15",
+    "clarifyingQuestion": null
+  },
+  "results": [
+    {
+      "itemType": "phone_tablet",
+      "label": "Phones & tablets",
+      "condition": "broken",
+      "checklist": [
+        "Remove SIM card and microSD card",
+        "Perform a factory reset if the screen turns on"
+      ],
+      "routes": [
+        {
+          "route": "ewaste_collection",
+          "label": "E-waste collection",
+          "providers": [
+            {
+              "city": "faridabad",
+              "providerId": "fbd-0003",
+              "name": "Example E-Waste Point",
+              "description": "Fictional authorized e-waste collection center.",
+              "routes": ["ewaste_collection"],
+              "acceptedItemTypes": ["phone_tablet", "charger_cable"],
+              "acceptanceNotes": "Accepts dead phones and cables.",
+              "serviceModes": ["drop_off"],
+              "cost": "free",
+              "address": "Plot 10, Industrial Area, Sector 15, Faridabad",
+              "localityId": "sector-15",
+              "lat": 28.411,
+              "lng": 77.319,
+              "phone": "+910000000000",
+              "verification": {
+                "level": "called",
+                "verifiedAt": "2026-10-09",
+                "verifiedBy": "M1",
+                "method": "Confirmed collection bin availability."
+              },
+              "isSample": true,
+              "active": true,
+              "updatedAt": "2026-10-09T10:00:00.000Z",
+              "distanceKm": 0.8
+            }
+          ],
+          "unverifiedProviders": []
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "classifier": "fallback",
+    "city": "faridabad",
+    "latencyMs": 45,
+    "origin": "locality"
+  }
+}

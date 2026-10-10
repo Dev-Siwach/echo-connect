@@ -60,9 +60,9 @@ Engineering workflow and collaboration rules are in [`TEAM_WORKFLOW.md`](TEAM_WO
 ## Phase 1: Shared Contracts & Core Logic Engine
 | Status | Task | Owner |
 |---|---|---|
-| [ ] | Define `shared/taxonomy.ts` & `shared/contracts.ts` (zod schemas) | Member 1 & 2 (Joint) |
-| [ ] | Create `scripts/sync-shared.mjs` code-sync script | Member 1 |
-| [ ] | Implement `rules.ts`, `geo.ts`, `match.ts`, `checklists.ts` + vitest tests | Member 1 |
+| [x] | Define `shared/taxonomy.ts` & `shared/contracts.ts` (zod schemas) | Member 1 & 2 (Joint) |
+| [x] | Create `scripts/sync-shared.mjs` code-sync script | Member 1 |
+| [x] | Implement `rules.ts`, `geo.ts`, `match.ts`, `checklists.ts` + vitest tests | Member 1 |
 | [ ] | Scaffold `web/` mock fixtures using the shared contracts | Member 2 |
 
 ---
@@ -70,11 +70,11 @@ Engineering workflow and collaboration rules are in [`TEAM_WORKFLOW.md`](TEAM_WO
 ## Phase 2: Backend on AWS with Fallback Classifier
 | Status | Task | Owner |
 |---|---|---|
-| [ ] | `backend/template.yaml` (Table, HTTP API, Lambdas, CloudWatch, IAM) | Member 1 |
-| [ ] | `lib/db.ts` (cached DynamoDB queries) & `lib/log.ts` (structured JSON logging) | Member 1 |
-| [ ] | `lib/classify/fallback.ts` (EN + Hinglish keyword classifier) + unit tests | Member 1 |
-| [ ] | Handlers: `/search`, `/providers`, `/health` with zod validation | Member 1 |
-| [ ] | `seed.ts` script + initial sample records validation | Member 1 |
+| [x] | `backend/template.yaml` (Table, HTTP API, Lambdas, CloudWatch, IAM) | Member 1 |
+| [x] | `lib/db.ts` (cached DynamoDB queries) & `lib/log.ts` (structured JSON logging) | Member 1 |
+| [x] | `lib/classify/fallback.ts` (EN + Hinglish keyword classifier) + unit tests | Member 1 |
+| [x] | Handlers: `/search`, `/providers`, `/health` with zod validation | Member 1 |
+| [x] | `seed.ts` script + initial sample records validation | Member 1 |
 | [ ] | Deploy stack via `sam deploy` & run `./scripts/smoke.sh` | Member 1 |
 
 ---
@@ -82,10 +82,10 @@ Engineering workflow and collaboration rules are in [`TEAM_WORKFLOW.md`](TEAM_WO
 ## Phase 3: Bedrock Converse AI Integration
 | Status | Task | Owner |
 |---|---|---|
-| [ ] | `lib/classify/prompt.ts` & `lib/classify/bedrock.ts` (Converse + forced tool) | Member 1 |
-| [ ] | Automatic fallback switching on error/timeout (`meta.classifier`) | Member 1 |
+| [x] | `lib/classify/prompt.ts` & `lib/classify/bedrock.ts` (Converse + forced tool) | Member 1 |
+| [x] | Automatic fallback switching on error/timeout (`meta.classifier`) | Member 1 |
 | [x] | Create test cases in `backend/tests/golden-queries.json` | Member 3 |
-| [ ] | Run `npm run eval:golden` and achieve ≥ 10/12 passes | Member 1 & 3 |
+| [x] | Run `npm run eval:golden` and achieve ≥ 10/12 passes | Member 1 & 3 |
 
 ---
 

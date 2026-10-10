@@ -1,0 +1,16 @@
+{
+  "requestId": "33333333-3333-4333-8333-333333333333",
+  "interpretation": {
+    "items": [],
+    "unsupportedItems": [],
+    "locationHint": null,
+    "clarifyingQuestion": "Could you mention what kind of electronics or household items you have and whether they work?"
+  },
+  "results": [],
+  "meta": {
+    "classifier": "bedrock",
+    "city": "faridabad",
+    "latencyMs": 1150,
+    "origin": "default"
+  }
+}

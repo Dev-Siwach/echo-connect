@@ -1,0 +1,25 @@
+{
+  "requestId": "22222222-2222-4222-8222-222222222222",
+  "interpretation": {
+    "items": [],
+    "unsupportedItems": [
+      {
+        "label": "double-door refrigerator",
+        "reason": "large_appliance"
+      },
+      {
+        "label": "car battery",
+        "reason": "hazardous"
+      }
+    ],
+    "locationHint": null,
+    "clarifyingQuestion": null
+  },
+  "results": [],
+  "meta": {
+    "classifier": "bedrock",
+    "city": "faridabad",
+    "latencyMs": 980,
+    "origin": "default"
+  }
+}

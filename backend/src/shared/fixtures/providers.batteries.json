@@ -1,0 +1,57 @@
+{
+  "providers": [
+    {
+      "city": "faridabad",
+      "providerId": "fbd-0004",
+      "name": "Example Battery Drop Point",
+      "description": "Fictional authorized drop-off bin for dry cell batteries.",
+      "routes": ["ewaste_collection"],
+      "acceptedItemTypes": ["battery_household"],
+      "acceptanceNotes": "Tape battery terminals before dropping.",
+      "serviceModes": ["drop_off"],
+      "cost": "free",
+      "address": "Eco Kiosk, Sector 15 Market, Faridabad",
+      "localityId": "sector-15",
+      "lat": 28.408,
+      "lng": 77.318,
+      "phone": "+910000000000",
+      "verification": {
+        "level": "official_list",
+        "verifiedAt": "2026-10-09",
+        "verifiedBy": "M1",
+        "method": "Listed under State Pollution Control Board e-waste centers."
+      },
+      "isSample": true,
+      "active": true,
+      "updatedAt": "2026-10-09T10:00:00.000Z",
+      "distanceKm": 1.1
+    }
+  ],
+  "unverifiedProviders": [
+    {
+      "city": "faridabad",
+      "providerId": "fbd-0005",
+      "name": "Example Neighborhood Scrap Dealer",
+      "description": "Fictional neighborhood scrap collector.",
+      "routes": ["ewaste_collection"],
+      "acceptedItemTypes": ["battery_household"],
+      "acceptanceNotes": "Informal collection point.",
+      "serviceModes": ["drop_off"],
+      "cost": "varies",
+      "address": "Near Old Bus Stand, Sector 15, Faridabad",
+      "localityId": "sector-15",
+      "lat": 28.406,
+      "lng": 77.315,
+      "verification": {
+        "level": "unverified",
+        "verifiedAt": "2026-10-09",
+        "verifiedBy": "M1",
+        "method": "Community submission, not yet verified by call."
+      },
+      "isSample": true,
+      "active": true,
+      "updatedAt": "2026-10-09T10:00:00.000Z",
+      "distanceKm": 1.8
+    }
+  ]
+}
