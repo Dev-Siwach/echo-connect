@@ -8,9 +8,11 @@
     "test:watch": "vitest",
     "typecheck": "tsc --noEmit",
     "build": "tsc",
-    "seed": "tsx scripts/seed.ts"
+    "seed": "tsx scripts/seed.ts",
+    "eval:golden": "tsx scripts/eval-golden.ts"
   },
   "dependencies": {
+    "@aws-sdk/client-bedrock-runtime": "^3.670.0",
     "@aws-sdk/client-dynamodb": "^3.670.0",
     "@aws-sdk/lib-dynamodb": "^3.670.0",
     "zod": "^3.23.8"

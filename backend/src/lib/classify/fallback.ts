@@ -252,6 +252,16 @@ function extractCondition(text: string, keyword: string): Condition {
     context = words.slice(start, end).join(' ');
   }
 
+  // Global multi-item condition indicators
+  if (
+    text.includes('sab chal rah') ||
+    text.includes('all working') ||
+    text.includes('all work') ||
+    text.includes('both working')
+  ) {
+    return 'working';
+  }
+
   const lower = context.toLowerCase();
 
   if (
@@ -341,7 +351,8 @@ export function classifyWithFallback(query: string): Interpretation {
   // 3. Match items
   for (const rule of ITEM_KEYWORD_RULES) {
     for (const kw of rule.keywords) {
-      if (normalized.includes(kw)) {
+      const kwRegex = new RegExp(`(?:^|\\W)${kw}(?:$|\\W)`, 'i');
+      if (kwRegex.test(normalized)) {
         const qty = extractQuantity(normalized, kw);
         const cond = extractCondition(normalized, kw);
 

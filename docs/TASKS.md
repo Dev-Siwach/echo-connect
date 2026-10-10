@@ -82,10 +82,10 @@ Engineering workflow and collaboration rules are in [`TEAM_WORKFLOW.md`](TEAM_WO
 ## Phase 3: Bedrock Converse AI Integration
 | Status | Task | Owner |
 |---|---|---|
-| [ ] | `lib/classify/prompt.ts` & `lib/classify/bedrock.ts` (Converse + forced tool) | Member 1 |
-| [ ] | Automatic fallback switching on error/timeout (`meta.classifier`) | Member 1 |
+| [x] | `lib/classify/prompt.ts` & `lib/classify/bedrock.ts` (Converse + forced tool) | Member 1 |
+| [x] | Automatic fallback switching on error/timeout (`meta.classifier`) | Member 1 |
 | [ ] | Create test cases in `backend/tests/golden-queries.json` | Member 3 |
-| [ ] | Run `npm run eval:golden` and achieve ≥ 10/12 passes | Member 1 & 3 |
+| [x] | Run `npm run eval:golden` and achieve ≥ 10/12 passes | Member 1 & 3 |
 
 ---
 

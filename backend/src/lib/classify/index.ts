@@ -8,6 +8,8 @@ import type { Interpretation } from '../../shared/contracts.js';
 import type { ClassifierMode } from '../../shared/taxonomy.js';
 import { classifyWithFallback } from './fallback.js';
 
+import { classifyWithBedrock } from './bedrock.js';
+
 export interface ClassificationResult {
   interpretation: Interpretation;
   classifier: ClassifierMode;
@@ -19,36 +21,20 @@ export interface ClassificationResult {
  */
 export async function classifyQuery(query: string): Promise<ClassificationResult> {
   const startTime = Date.now();
-  const mode = process.env.CLASSIFIER_MODE || 'fallback';
+  const mode = process.env.CLASSIFIER_MODE || 'bedrock';
 
-  if (mode === 'fallback') {
-    const interpretation = classifyWithFallback(query);
-    const latencyMs = Date.now() - startTime;
-    return {
-      interpretation,
-      classifier: 'fallback',
-      latencyMs,
-    };
-  }
-
-  // Bedrock execution will be plugged in Step 5 (feat/bedrock).
-  // For Step 4, if mode is bedrock but unconfigured, gracefully fallback.
-  try {
-    // Dynamic import to allow modular step-by-step builds
-    const { classifyWithBedrock } = await import('./bedrock.js').catch(() => ({
-      classifyWithBedrock: null,
-    }));
-
-    if (classifyWithBedrock) {
+  if (mode === 'bedrock') {
+    try {
       const interpretation = await classifyWithBedrock(query);
       return {
         interpretation,
         classifier: 'bedrock',
         latencyMs: Date.now() - startTime,
       };
+    } catch (err: unknown) {
+      const msg = (err as Error)?.message || String(err);
+      console.warn(`[classify] Bedrock unavailable (${msg}), switching to fallback classifier.`);
     }
-  } catch (err) {
-    console.warn('[classify] Bedrock error, falling back to keyword classifier:', err);
   }
 
   const interpretation = classifyWithFallback(query);
@@ -58,3 +44,4 @@ export async function classifyQuery(query: string): Promise<ClassificationResult
     latencyMs: Date.now() - startTime,
   };
 }
+
