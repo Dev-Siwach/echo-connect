@@ -1,0 +1,6 @@
+# Next.js build and cache
+.next/
+out/
+node_modules/
+*.tsbuildinfo
+.DS_Store
