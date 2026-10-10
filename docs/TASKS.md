@@ -70,10 +70,10 @@ Engineering workflow and collaboration rules are in [`TEAM_WORKFLOW.md`](TEAM_WO
 ## Phase 2: Backend on AWS with Fallback Classifier
 | Status | Task | Owner |
 |---|---|---|
-| [ ] | `backend/template.yaml` (Table, HTTP API, Lambdas, CloudWatch, IAM) | Member 1 |
-| [ ] | `lib/db.ts` (cached DynamoDB queries) & `lib/log.ts` (structured JSON logging) | Member 1 |
-| [ ] | `lib/classify/fallback.ts` (EN + Hinglish keyword classifier) + unit tests | Member 1 |
-| [ ] | Handlers: `/search`, `/providers`, `/health` with zod validation | Member 1 |
+| [x] | `backend/template.yaml` (Table, HTTP API, Lambdas, CloudWatch, IAM) | Member 1 |
+| [x] | `lib/db.ts` (cached DynamoDB queries) & `lib/log.ts` (structured JSON logging) | Member 1 |
+| [x] | `lib/classify/fallback.ts` (EN + Hinglish keyword classifier) + unit tests | Member 1 |
+| [x] | Handlers: `/search`, `/providers`, `/health` with zod validation | Member 1 |
 | [x] | `seed.ts` script + initial sample records validation | Member 1 |
 | [ ] | Deploy stack via `sam deploy` & run `./scripts/smoke.sh` | Member 1 |
 
